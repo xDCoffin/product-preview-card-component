@@ -139,7 +139,7 @@ body {
         flex-direction: column;
     }
 
-    .card img{
+    .card img:not(button img){
         height: 240px;
         object-fit: cover;
     }
