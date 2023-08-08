@@ -57,7 +57,7 @@ body {
     justify-content: space-between;
 }
 
-.card img {
+.card img:not(button img) {
     width: 100%;
     display: block;
     height: 100%;
@@ -117,6 +117,13 @@ body {
     padding: 15px 0;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card button img{
+    margin-right: 10px;
 }
 
 .card button:hover{
