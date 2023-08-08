@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('./assets/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Fraunces;
+    src: url('./assets/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf');
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--cream-bg, #F2EAE2);
+}
+
+.card {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.card .col {
+    width: 100%;
+}
+
+.card .col:last-child {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .top {
+    color: #6C7289;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.card .title {
+    color: #1C232B;
+    font-family: Fraunces;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.card .description {
+    color: #6C7289;
+    font-size: 14px;
+}
+
+.card .prices {
+    display: flex;
+    align-items: center;
+}
+
+.card .price {
+    color: #3D8168;
+    font-family: Fraunces;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin-right: 10px;
+}
+
+.card .normalprice {
+    color: #6C7289;
+    font-size: 13px;
+    text-decoration-line: line-through;
+}
+
+.card button {
+    border-radius: 8px;
+    background: #3D8168;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-color: #1A4032;
+}
+
+@media (max-width: 375px) {
+    body{
+        padding: 10px;
+    }
+
+    .card{
+        flex-direction: column;
+    }
+
+    .card img{
+        height: 240px;
+        object-fit: cover;
+    }
+
+    .card .col:last-child{
+        min-height: 370px;
+    }
+}
